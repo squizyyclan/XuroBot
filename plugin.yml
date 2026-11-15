@@ -1,0 +1,17 @@
+name: DiscordBridge
+version: '${project.version}'
+main: de.discordbridge.DiscordBridge
+api-version: '1.21'
+description: Lässt einen Discord-Bot laufen und verbindet Minecraft-Chat mit Discord
+libraries:
+  - net.dv8tion:JDA:5.2.2
+commands:
+  discordbridge:
+    description: Verwaltet die Discord-Anbindung
+    usage: /discordbridge <status|reload>
+    permission: discordbridge.admin
+    aliases: [dcb]
+permissions:
+  discordbridge.admin:
+    description: Erlaubt die Verwaltung des Bots
+    default: op

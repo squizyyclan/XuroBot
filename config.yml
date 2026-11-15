@@ -1,0 +1,24 @@
+# Bot-Token aus dem Discord Developer Portal.
+# Alternativ: Umgebungsvariable DISCORD_TOKEN setzen (hat Vorrang).
+token: ""
+
+# ID des Discord-Kanals für die Chat-Brücke (Rechtsklick auf Kanal -> ID kopieren)
+channel-id: ""
+
+# Status des Bots ("Spielt ...")
+activity: "auf dem Minecraft-Server"
+
+bridge:
+  minecraft-to-discord: true
+  discord-to-minecraft: true
+  join-quit-messages: true
+  death-messages: true
+  server-status-messages: true
+
+messages:
+  server-start: ":green_circle: Server ist online!"
+  server-stop: ":red_circle: Server wird gestoppt."
+  join: ":inbox_tray: **%player%** hat den Server betreten."
+  quit: ":outbox_tray: **%player%** hat den Server verlassen."
+  death: ":skull: %message%"
+  chat: "**%player%**: %message%"
